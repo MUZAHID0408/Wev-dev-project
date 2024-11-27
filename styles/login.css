@@ -32,7 +32,7 @@ body{
     padding: 70px;
     border-radius: 10px;
     background-color: #FEF9D9;
-    box-shadow: 10px 10px #8EACCD;
+    box-shadow: 10px 10px 10px #8EACCD;
 
 }
 
@@ -65,7 +65,7 @@ body{
         flex-wrap: wrap;
         width: fit-content;
         gap: 60px;
-        padding: 10px;
+        padding: 20px;
         border-radius: 10px;
         background-color: #FEF9D9;
         box-shadow: 10px 10px #8EACCD;
