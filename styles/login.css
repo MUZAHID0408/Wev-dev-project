@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2E0FB;
+}
+.set_middle{
+    display: flex;
+    justify-content: space-around;
+
+}
+.logo_area{
+    display: flex;
+    align-items: center;
+}
+
+.login_area label{
+    color: #8EACCD;
+}
+
+.login_area div{
+    color: rgb(57, 57, 57);
+}
+
+.login_content_holder{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 60px;
+    padding: 70px;
+    border-radius: 10px;
+    background-color: #FEF9D9;
+    box-shadow: 10px 10px #8EACCD;
+
+}
+
+@media (max-width: 768px){
+    .login_content_holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: fit-content;
+        gap: 60px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #FEF9D9;
+        box-shadow: 10px 10px #8EACCD;
+    
+    }
+
+    .logo_area{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 524px){
+    .login_content_holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: fit-content;
+        gap: 60px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #FEF9D9;
+        box-shadow: 10px 10px #8EACCD;
+    
+    }
+
+    .logo_area{
+        justify-content: center;
+    }
+}
+
+
