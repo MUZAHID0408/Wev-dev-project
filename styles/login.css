@@ -16,7 +16,7 @@ body{
 }
 
 .login_area label{
-    color: #8EACCD;
+    color: #1A1A19;
 }
 
 .login_area div{
@@ -36,6 +36,11 @@ body{
 
 }
 
+.login_area img:hover{
+    content: "Go to Home";
+}
+
+
 @media (max-width: 768px){
     .login_content_holder{
         display: flex;
@@ -54,27 +59,36 @@ body{
     .logo_area{
         justify-content: center;
     }
+
+
+    
+
 }
 
 
 @media (max-width: 524px){
+    
     .login_content_holder{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         width: fit-content;
+        height: 80%;
         gap: 60px;
         padding: 20px;
         border-radius: 10px;
         background-color: #FEF9D9;
         box-shadow: 10px 10px #8EACCD;
+        
     
     }
 
     .logo_area{
         justify-content: center;
     }
+    
 }
 
 

@@ -1,3 +1,38 @@
+<?php
+    include 'connectToLogInfo.php';
+
+    if(isset($_POST['logIn'])){
+        $email = $_POST['emailAddress'];
+        $password = md5($_POST['password']);
+
+        if($email === "" || $password === ""){
+            echo "<script>alert('Please provide required information');</script>";
+        }else{
+            $query = "SELECT password FROM users WHERE email ='".mysqli_real_escape_string($conn, $email)."'";
+            $result = mysqli_query($conn, $query);
+            if(mysqli_num_rows($result) <=0){
+               echo "<script>alert('Login information could not be found.');</script>";
+            }else{
+                $query = "SELECT * FROM users WHERE email ='".mysqli_real_escape_string($conn, $email)."'";
+                $result = mysqli_query($conn, $query);
+                $row = mysqli_fetch_array($result);
+                if($row['password'] === $password){
+                    session_start();
+                    $_SESSION['email'] = $row['email'];
+                    echo "<script>alert('Login successfull');</script>";
+                    header("Location: http://localhost/GCF/index.php");
+                }else{
+                    echo "<script>alert('Wrong Password');</script>";
+                }
+
+
+                
+            }
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,29 +47,31 @@
 </head>
 
 <body>
-    <?php
-
-    ?>
     
+
     <div class="container-sm set_middle">
 
         <div class="login_content_holder ">
             <div class="logo_area">
-                <img src="styles/logo.svg" width="125px" alt="GUB community forum logo">
+
+                <a href="http://localhost/GCF/index.php">
+                    <img src="styles/logo.svg" width="100px" alt="GUB community forum logo">
+                </a>
+
             </div>
             <div class="login_area">
-                <form>
+                <form method="post" action="login.php">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="emailAddress" aria-describedby="emailHelp" required>
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
                     </div>
                     <div class="mb-3 set_middle">
-                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <button type="submit" class="btn btn-primary" name="logIn">Log In</button>
                         <p>OR</p>
                         <a href="http://localhost/GCF/signup.php" class="btn btn-secondary">Sign up</a>
                     </div>

@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 
@@ -25,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active hover_blue" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active hover_blue" aria-current="page" href="http://localhost/GCF/forum.php">Forum</a>
                         </li>
 
                         <li class="nav-item">
@@ -40,7 +43,11 @@
                             <a class="nav-link hover_blue" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link login_signup" href="http://localhost/GCF/login.php">Login Or Sign up</a>
+                          <?php if(isset($_SESSION['email']) && $_SESSION['email']): ?>
+                              <a class="nav-link login_signup" href="http://localhost/GCF/logout.php">Log out</a>
+                          <?php else:?>
+                               <a class="nav-link login_signup" href="http://localhost/GCF/login.php">Login Or Sign up</a>
+                          <?php endif; ?>
                         </li>
                         
                     </ul>
@@ -59,7 +66,7 @@
                 <div class="col-lg-6 mx-auto">
                   <p class="lead mb-4">This platform is designed to help students, especially new ones, connect with resources, ask questions, and share experiences about university life. Browse through our categories or post a new topic to start a discussion!</p>
                   <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <a href="#" class="text-decoration-none btn btn-primary btn-lg px-4 me-sm-3">Open Forum</a>
+                    <a href="http://localhost/GCF/forum.php" class="text-decoration-none btn btn-primary btn-lg px-4 me-sm-3">Open Forum</a>
                     <a href="https://green.edu.bd/" class="text-decoration-none btn btn-outline-secondary btn-lg px-4">GUB Webpage</a>
                   </div>
                 </div>
