@@ -1,69 +1,50 @@
-
-
-/* Main Content */
-.main-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    background: #D2E0FB;
 }
 
-/* Post Form Section */
-.post-form {
-    margin-bottom: 40px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+
+main {
+    flex: 1;
 }
 
-.post-form h2 {
-    margin-bottom: 15px;
+.card {
+    border-radius: 10px;
 }
 
-.post-form textarea {
+.list-group li a {
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+}
+
+
+.card-title {
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
+
+#file-upload {
+    display: none;
+}
+
+.setMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loginRequest {
+    text-align: center;
+}
+
+.footer {
     width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-.post-form input[type="file"] {
-    margin-bottom: 15px;
-}
-
-.post-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.post-form button:hover {
-    background-color: #45a049;
-}
-
-/* Posts Section */
-.posts-section {
-    margin-top: 20px;
-}
-
-.posts-section h2 {
-    margin-bottom: 15px;
-}
-
-.post {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #ffffff;
-}
-
-.post img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-top: 10px;
-}

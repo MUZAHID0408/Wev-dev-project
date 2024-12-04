@@ -8,7 +8,7 @@
 // const ConfirmPassword_ariaText = document.getElementById('confirmPasswordCheck');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const password = document.getElementById('inputPassword');
+    const password = document.getElementById('password');
     const passwordCheck_ariaText = document.getElementById('passwordCheck');
     const confirmPassword = document.getElementById('confirmPassword');
     const ConfirmPassword_ariaText = document.getElementById('confirmPasswordCheck');
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (password.value !== "" && password.value === confirmPassword.value) {
             ConfirmPassword_ariaText.innerText = "Password matched";
-            ConfirmPassword_ariaText.style.color = "#6EC207"; 
+            ConfirmPassword_ariaText.style.color = "#008000"; 
         } else {
             ConfirmPassword_ariaText.innerText = "Passwords do not match";
-            ConfirmPassword_ariaText.style.color = "#D94A38";
+            ConfirmPassword_ariaText.style.color = "red";
         }
     }
 
@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const passwordLength = password.value.length;
         if(passwordLength <=5){
             passwordCheck_ariaText.innerText = "Password must contain at least 6 character";
-            passwordCheck_ariaText.style.color = "#D94A38";
+            passwordCheck_ariaText.style.color = "red";
         }else if(passwordLength > 5){
             passwordCheck_ariaText.innerText = "Password contains 6 characters";
-            passwordCheck_ariaText.style.color = "#6EC207";
+            passwordCheck_ariaText.style.color = " #008000";
         }
     });
 });

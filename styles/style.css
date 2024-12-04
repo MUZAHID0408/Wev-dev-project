@@ -1,24 +1,119 @@
 /* initials */
 body {
-    background: #D2E0FB;
-    
+  background: #D2E0FB;
+
 }
 
-.color_green {
-    color: #619e66;
+.container-sm.px-5 {
+  display: flex;
+  justify-content: center;
 }
 
-/* header */
-.login_signup:hover {
-    color: #72BF78;
-    transition: 300ms;
+#carouselExampleIndicators {
+  box-shadow: 10px 10px 3px #6d7688;
+  margin-bottom: 20px;
+
 }
 
-.hover_blue:hover {
-    color: #0D92F4;
+/* hero section */
+
+#gub_text {
+  background-clip: padding-box;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#1dc242, #0D92F4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 5px 4px black;
 }
+
+#open_forum_btn:hover {
+  transition: 200ms;
+  background-color: rgb(44, 44, 44);
+
+}
+
+/* resources section */
+
+#resources {
+  background-color: #D2E0FB !important;
+}
+
+#resources h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.resource-card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+}
+
+.resource-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card .icon-container {
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 15px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.resource-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.resource-card .card-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.resource-card .btn {
+  font-size: 0.9rem;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.resource-card .btn:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  border-color: #0056b3;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+
 
 /* footer secction*/
-#footer_text p{
-    color: rgb(183, 183, 183);
+#footer_text p {
+  color: rgb(183, 183, 183);
+}
+
+
+@media (max-width: 768px) {
+  #gub_text {
+    font-size: 26px;
+  }
+
+  #resources h2 {
+    font-size: 2rem;
+  }
+
+  .resource-card .card-title {
+    font-size: 1.1rem;
+  }
+
+  .resource-card .card-text {
+    font-size: 0.85rem;
+  }
 }

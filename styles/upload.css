@@ -1,0 +1,81 @@
+/* custom.css */
+
+/* Basic body and container settings */
+body {
+    background-color: #D2E0FB;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    flex: 1;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+
+form.form-inline.my-2.my-lg-0 {
+    display: flex;
+    gap: 30px;
+    width: 50%;
+}
+
+/* Posts Section */
+.posts-section {
+    margin-top: 40px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+
+.setMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loginRequest {
+    text-align: center;
+}
+
+/* footer section */
+#footer_text p{
+    color: rgb(183, 183, 183);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .category-buttons input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .post-form {
+        padding: 20px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 524px) {
+    form.form-inline.my-2.my-lg-0 {
+        gap: 5px;
+        width: 100%;
+    }
+}
