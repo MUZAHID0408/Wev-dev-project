@@ -83,7 +83,7 @@ if (isset($_POST['post_to']) && isset($_POST['content'])) {
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link hover_blue" href="#">Widget</a>
+                            <a class="nav-link hover_blue" href="http://localhost/GCF/widgets.php">Widgets</a>
                         </li>
 
                         <li class="nav-item">

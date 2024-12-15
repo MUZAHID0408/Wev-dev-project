@@ -82,7 +82,7 @@ if (isset($_POST['SignIn'])) {
                 <div class="mb-3">
                     <label for="userName" class="form-label">Username</label>
                     <input type="text" class="form-control" id="userName" name="userName" placeholder="e.g., Md. Karim" aria-describedby="emailHelp" required>
-                    <div id="emailHelp" class="form-text">Give university provided mail address</div>
+                    <div id="emailHelp" class="form-text">Give a valid user name</div>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>

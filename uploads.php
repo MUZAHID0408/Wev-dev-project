@@ -60,12 +60,9 @@ $result = $conn->query("SELECT * FROM uploads ORDER BY uploaded_at DESC");
 
 
                         <li class="nav-item">
-                            <a class="nav-link hover_blue" href="#">Widget</a>
+                            <a class="nav-link hover_blue" href="http://localhost/GCF/widgets.php">Widgets</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link hover_blue" href="#">FAQ</a>
-                        </li>
+                        
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <?php if (isset($_SESSION['email']) && $_SESSION['email']): ?>

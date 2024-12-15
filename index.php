@@ -36,12 +36,9 @@ session_start();
             </li>
 
             <li class="nav-item">
-              <a class="nav-link hover_blue" href="#">Widget</a>
+              <a class="nav-link hover_blue" href="http://localhost/GCF/widgets.php">Widgets</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link hover_blue" href="#">FAQ</a>
-            </li>
           </ul>
           <ul class="navbar-nav ms-auto">
             <?php if (isset($_SESSION['email']) && $_SESSION['email']): ?>
@@ -80,13 +77,13 @@ session_start();
               </div>
               <div class="carousel-inner ">
                 <div class="carousel-item active">
-                  <img src="styles/green1.png" class="d-block w-100" alt="Green Univeristy main building">
+                  <img src="assets/images/green1.png" class="d-block w-100" alt="Green Univeristy main building">
                 </div>
                 <div class="carousel-item ">
-                  <img src="styles/green2.png" class="d-block w-100" alt="Green Univeristy Main building">
+                  <img src="assets/images/green2.png" class="d-block w-100" alt="Green Univeristy Main building">
                 </div>
                 <div class="carousel-item ">
-                  <img src="styles/green3.png" class="d-block w-100" alt="Green University Annex Building">
+                  <img src="assets/images/green3.png" class="d-block w-100" alt="Green University Annex Building">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

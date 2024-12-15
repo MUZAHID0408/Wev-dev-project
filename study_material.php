@@ -76,8 +76,8 @@ if ($searchQuery) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active hover_blue" aria-current="page" href="http://localhost/GCF">Home</a></li>
-                        <li class="nav-item"><a class="nav-link hover_blue" href="#">Widget</a></li>
-                        <li class="nav-item"><a class="nav-link hover_blue" href="#">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link hover_blue" href="http://localhost/GCF/widgets.php">Widgets</a></li>
+                       
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <?php if (isset($_SESSION['email']) && $_SESSION['email']): ?>
